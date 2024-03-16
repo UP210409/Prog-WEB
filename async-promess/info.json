@@ -1,0 +1,14 @@
+{
+    "usuarios":[
+        {
+            "name": "Delfi", 
+            "years": 27,
+            "alive": true
+        },
+        {
+            "name": "Roger", 
+            "years": 24,
+            "alive": false
+        }
+    ]
+}
