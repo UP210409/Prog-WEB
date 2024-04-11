@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="/crud/assets/css/styles.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">CRUD - ToDo App :)</a>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid mt-5">
+      <section class="row">
+        <article class="col-4">
+          <div class="card">
+            <header class="card-header">
+              <p id="form-title" class="h2 text-center text-capitalize">Cree
+                una tarea</p>
+            </header>
+            <form id="form-task" class="card-body">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="title"
+                  id="title"
+                  placeholder="Nombre de la tarea" 
+                  autofocus
+                  required
+                  />
+              </div>
+              <div class="mb-3">
+                <select class="form-select" name="users" id="users">
+                  <option selected disabled>Selecciona un usuario</option>
+                  <hr class="border-dark" />
+                </select>
+              </div>
+              <div class="mb-3">
+                ¿Terminaste la tarea? 
+                <input type="checkbox" name="completed" id="completed">
+              </div>
+              <button type="submit" class=" btn btn-primary btn-sm w-100" id="submitBtn">
+                GUARDAR
+              </button>
+            </form>
+          </div>
+        </article>
+        <article class="col-8">
+          <table class="table table-dark table-hover" id="tasks">
+            <thead>
+              <tr>
+                <th>ID</td>
+                <th>Usuario</td>
+                <th>Titulo</td>
+                <th>Tarea Completada</td>
+                <th>¿Eliminar o actualizar?</td>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </article>
+      </section>
+    </main>
+    <!--<script src="/crud/assets/js/petitions.js"></script>  es una forma de conectar los archivos de java-->
+    <script type="module" src="/crud/assets/js/app.js"></script>
+  </body>
+</html>
